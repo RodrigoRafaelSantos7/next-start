@@ -1,5 +1,12 @@
-import { Button } from "@nextui-org/react";
+import { Card, CardBody } from "@nextui-org/react";
 
 export default function Home() {
-  return <Button>Hello World</Button>;
+  return (
+    <Card className="mx-auto mt-4 max-w-md">
+      <CardBody className="text-center">
+        <h1 className="text-5xl">Next.js Starter</h1>
+        <p className="text-xl">A simples starter for next.js</p>
+      </CardBody>
+    </Card>
+  );
 }
