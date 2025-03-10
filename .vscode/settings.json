@@ -7,5 +7,10 @@
   },
   "files.associations": {
     "*.css": "tailwindcss"
+  },
+  "workbench.editor.customLabels.patterns": {
+    "**/src/app/**/page.tsx": "${dirname} - Page",
+    "**/src/app/**/layout.tsx": "${dirname} - Layout",
+    "**/src/components/**/index.tsx": "${dirname} - Component"
   }
 }
