@@ -21,12 +21,12 @@ export function ThemeSwitcher() {
     <Button
       onClick={() => (theme === "dark" ? setTheme("light") : setTheme("dark"))}
       variant="outline"
-      size="icon"
+      size="sm"
     >
       <RiSunLine />
     </Button>
   ) : (
-    <Button onClick={() => setTheme("dark")} variant="outline" size="icon">
+    <Button onClick={() => setTheme("dark")} variant="outline" size="sm">
       <RiMoonClearLine />
     </Button>
   );
