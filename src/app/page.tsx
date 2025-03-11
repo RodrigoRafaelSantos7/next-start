@@ -1,10 +1,12 @@
-import { ThemeSwitcher } from "@/components/app-navbar/theme-switcher";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hello World</h1>
-      <ThemeSwitcher />
-    </div>
+    <Card className="mx-auto mt-4 max-w-md">
+      <CardContent className="text-center">
+        <h1 className="text-5xl">Next.js Starter</h1>
+        <p className="text-xl">A simple starter for Next.js</p>
+      </CardContent>
+    </Card>
   );
 }
