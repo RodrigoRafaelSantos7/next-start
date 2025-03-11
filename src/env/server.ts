@@ -8,7 +8,6 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "production"]),
-    DATABASE_URL: z.string().url(),
   },
   onValidationError: (issues: readonly StandardSchemaV1.Issue[]) => {
     console.error("❌ Invalid environment variables:", issues);
@@ -20,5 +19,6 @@ export const env = createEnv({
    * `SOME_VAR=''` will throw an error.
    */
   emptyStringAsUndefined: true,
+  // eslint-disable-next-line n/no-process-env
   runtimeEnv: process.env,
 });
