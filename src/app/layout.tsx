@@ -1,14 +1,22 @@
-import type { Metadata } from "next";
+import type { Viewport } from "next";
 
 import { AppNavbar } from "@/components/app-navbar";
 import Providers from "@/components/providers";
+import config from "@/config";
+import { getSEOTags } from "@/lib/seo";
 
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Next.js Starter App",
-  description: "A basic starter for Next.js",
+export const viewport: Viewport = {
+  // Will use the primary color of your theme to show a nice theme color in the URL bar of supported browsers
+  themeColor: config.colors.main,
+  width: "device-width",
+  initialScale: 1,
 };
+
+// This adds default SEO tags to all pages in our app.
+// You can override them in each page passing params to getSEOTags() function.
+export const metadata = getSEOTags();
 
 export default function RootLayout({
   children,
