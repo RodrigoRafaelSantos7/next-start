@@ -1,5 +1,6 @@
 import { FlatCompat } from "@eslint/eslintrc";
 import checkFile from "eslint-plugin-check-file";
+import nodePlugin from "eslint-plugin-n";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -15,12 +16,14 @@ const eslintConfig = [
   {
     plugins: {
       "check-file": checkFile,
+      n: nodePlugin,
     },
     rules: {
       "prefer-arrow-callback": ["error"],
       "prefer-template": ["error"],
       semi: ["error"],
       quotes: ["error", "double"],
+      "n/no-process-env": ["error"],
       "check-file/filename-naming-convention": [
         "error",
         {
