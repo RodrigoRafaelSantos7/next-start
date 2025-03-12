@@ -1,5 +1,22 @@
 # 🚀 Next Starter Template
 
+## TO-DO
+
+This is my Roadmap of things I wish to add down the line:
+
+- [ ] Enhance the README.md
+- [ ] SEO
+- [ ] Landing Page
+- [ ] Dashboard
+- [ ] Documentation Website
+
+On a Different Branch
+- [ ] Add Nextauth
+- [ ] Add Drizzle
+
+On a Different Branch
+- [ ] Add SUpabase
+
 ## 🗄️ Project Structure
 
 Most of the code lives in the `src` folder and looks something like this:
