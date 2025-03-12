@@ -1,0 +1,17 @@
+export const siteConfig = {
+  name: "Next.js Start V3",
+  url: "",
+  ogImage: "",
+  description: "A set of beautifully-designed Next.js Starter",
+  links: {
+    github: "https://github.com/RodrigoRafaelSantos7",
+    personal: "https://rodrigosantos.dev",
+  },
+};
+
+export type SiteConfig = typeof siteConfig;
+
+export const META_THEME_COLORS = {
+  light: "#ffffff",
+  dark: "#09090b",
+};
