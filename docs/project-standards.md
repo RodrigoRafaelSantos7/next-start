@@ -48,21 +48,30 @@ We can also enforce the file naming conventions and folder naming conventions in
 To enforce this, you can use ESLint:
 
 ```js
-'check-file/filename-naming-convention': [
-  'error',
-  {
-      '**/*.{ts,tsx}': 'KEBAB_CASE',
-  },
-  {
-      // ignore the middle extensions of the filename to support filename like bable.config.js or smoke.spec.ts
-      ignoreMiddleExtensions: true,
-  },
-],
-'check-file/folder-naming-convention': [
-  'error',
-  {
-    // all folders within src (except __tests__)should be named in kebab-case
-    'src/**/!(__tests__)': 'KEBAB_CASE',
-  },
-],
+import checkFile from "eslint-plugin-check-file";
+
+const eslintConfig = [{
+    plugins {
+        "check-file": checkFile,
+    }
+    rules {
+        'check-file/filename-naming-convention': [
+            'error',
+            {
+                '**/*.{ts,tsx}': 'KEBAB_CASE',
+            },
+            {
+                // ignore the middle extensions of the filename to support filename like bable.config.js or smoke.spec.ts
+                ignoreMiddleExtensions: true,
+            },
+            ],
+            'check-file/folder-naming-convention': [
+            'error',
+            {
+                // all folders within src (except __tests__)should be named in kebab-case
+                'src/**/!(__tests__)': 'KEBAB_CASE',
+            },
+        ],
+    }
+}
 ```
