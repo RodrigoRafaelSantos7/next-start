@@ -4,7 +4,7 @@ export const siteConfig = {
   ogImage: "",
   description: "A set of beautifully-designed Next.js Starter",
   links: {
-    github: "https://github.com/RodrigoRafaelSantos7",
+    github: "https://github.com/RodrigoRafaelSantos7/next-start",
     personal: "https://rodrigosantos.dev",
   },
 };
