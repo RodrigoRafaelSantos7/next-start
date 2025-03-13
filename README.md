@@ -35,6 +35,8 @@ To get most out of it, do not get limited by the technologies used in here, but 
 ## Table Of Contents
 
 - [⚙️ Project Standards](docs/project-standards.md)
+- [🗄️ Project Structure](docs/project-struct.md)
+- [🧱 Components And Styling](docs/components-and-styling.md)
 
 ## License
 
