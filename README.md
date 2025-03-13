@@ -37,6 +37,8 @@ To get most out of it, do not get limited by the technologies used in here, but 
 - [⚙️ Project Standards](docs/project-standards.md)
 - [🗄️ Project Structure](docs/project-struct.md)
 - [🧱 Components And Styling](docs/components-and-styling.md)
+- [🗃️ State Management](docs/state-management.md)
+- [⚠️ Error Handling](docs/error-handling.md)
 
 ## License
 
